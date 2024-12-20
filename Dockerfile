@@ -4,6 +4,15 @@ FROM python:2.7
 # Set the working directory in the container
 WORKDIR /app
 
+# Clone angular-tools repo in sibling directory, then run `tar -czf angular-tools.tar.gz -C /Users/edward/code/nes angular-tools`
+COPY angular-tools.tar.gz /app/
+RUN tar -xzf /app/angular-tools.tar.gz -C /app && rm /app/angular-tools.tar.gz
+
+# TODO: place angular-tools inside node_modules. Currently npm i hangs with this setup though
+# RUN mkdir -p node_modules/@neverendingsupport/
+# COPY angular-tools.tar.gz /app/
+# RUN tar -xzf /app/angular-tools.tar.gz -C /app/node_modules/@neverendingsupport && rm /app/angular-tools.tar.gz
+
 # Install Node.js
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
@@ -54,7 +63,7 @@ COPY . .
 # Install any needed packages specified in package.json
 RUN echo $npm_config_local_prefix
 # RUN npm install --legacy-peer-deps
-RUN npm install
+RUN DEBUG=1 npm install
 
 ### If postinstall scripts are disabled, also run the following command:
 # RUN npx ngnes
@@ -66,4 +75,5 @@ RUN npm run build || exit 1
 EXPOSE 4200
 
 # Run the app when the container launches
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["tail", "-f", "/dev/null"]
