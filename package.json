@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "docker": "docker build -t angular-v9 . && docker run -d -p 4200:4200 angular-v9",
+    "docker": "docker build --no-cache -t angular-v9 . && docker run -d -p 4200:4200 angular-v9",
     "start": "ng serve",
     "build": "ng build --configuration production  --base-href ./ && cp CNAME dist/CNAME",
     "build-prod": "ng build --configuration production",
@@ -38,12 +38,12 @@
     "@angular-devkit/build-angular": "~0.901.13",
     "@angular/cli": "~9.1.13",
     "@angular/compiler-cli": "~9.1.13",
-    "@types/jasmine": "~3.5.0",
+    "@types/jasmine": "3.8.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/marked": "^4.0.8",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
+    "jasmine-core": "3.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -55,6 +55,9 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "3.8.3"
+  },
+  "overrides": {
+    "ip": { ".": "npm:neoip@2.1.0" }
   }
 }
