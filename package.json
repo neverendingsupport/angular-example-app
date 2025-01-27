@@ -10,8 +10,7 @@
     "build-prod": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint --force",
-    "e2e": "ng e2e",
-    "postinstall": "npx ngnes"
+    "e2e": "ng e2e"
   },
   "pre-commit": [
     "lint"
@@ -25,7 +24,7 @@
     "@angular/common": "npm:@neverendingsupport/angular@9.1.13-common-9.1.16",
     "@angular/compiler": "npm:@neverendingsupport/angular@9.1.13-compiler-9.1.16",
     "@angular/core": "npm:@neverendingsupport/angular@9.1.13-core-9.1.16",
-    "@neverendingsupport/angular-tools": "file:/app/angular-tools",
+    "@neverendingsupport/angular-tools": "1.1.3",
     "@angular/forms": "npm:@neverendingsupport/angular@9.1.13-forms-9.1.16",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@9.1.13-platform-browser-9.1.16",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@9.1.13-platform-browser-dynamic-9.1.16",
