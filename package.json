@@ -40,7 +40,7 @@
     "zone.js": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.16"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.13",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.16",
     "@angular/cli": "~9.1.13",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.16",
     "@types/jasmine": "~3.5.0",
@@ -60,7 +60,8 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "webpack-dev-middleware": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4"
   },
   "overrides": {
     "@angular/animations": {
@@ -104,6 +105,10 @@
     },
     "zone.js": {
       ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.16"
-    }
+    },
+    "@angular-devkit/build-angular": {
+      ".": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.16"
+    },
+    "webpack-dev-middleware": { ".": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4" }
   }
 }
