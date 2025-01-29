@@ -13,6 +13,7 @@ WORKDIR /app
 # COPY angular-tools.tar.gz /app/
 # RUN tar -xzf /app/angular-tools.tar.gz -C /app/node_modules/@neverendingsupport && rm /app/angular-tools.tar.gz
 
+
 # Install Node.js
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
