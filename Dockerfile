@@ -55,6 +55,9 @@ RUN echo "@neverendingsupport:registry=https://registry.dev.nes.herodevs.com/npm
 RUN node -v
 RUN npm -v
 
+# Set npm version to a version where transitive dependencies can be correctly overridden
+RUN npm install -g npm@8.19.4
+
 # Install Angular CLI globally inside the container
 RUN npm install -g @angular/cli@9.1.13
 
