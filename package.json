@@ -60,7 +60,10 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "webpack-dev-middleware": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4",
+    "ip": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.10",
+    "http-proxy-middleware": "npm:@neverendingsupport/http-proxy-middleware@0.19.2-http-proxy-middleware-0.19.3"
   },
   "overrides": {
     "@angular/animations": {
