@@ -40,9 +40,10 @@
     "zone.js": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.16",
-    "@angular/cli": "npm:@neverendingsupport/angular-cli@9.1.15-cli-9.1.16",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.17",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@9.1.15-cli-9.1.17",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.17",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@9.1.15-webpack-9.1.17",
     "@types/jasmine": "~3.8.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/marked": "^4.0.8",
@@ -102,7 +103,8 @@
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@9.1.13-upgrade-9.1.17"
     },
-    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@9.1.15-cli-9.1.16"},
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@9.1.15-cli-9.1.17"},
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/angular-cli@9.1.15-webpack-9.1.17"},
     "@angular/compiler-cli": {
       ".": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.17"
     },
@@ -110,7 +112,7 @@
       ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
     },
     "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.16"
+      ".": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.17"
     },
     "webpack-dev-middleware": { ".": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4" },
     "ip": { ".": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.10"},
