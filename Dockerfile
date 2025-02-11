@@ -41,8 +41,6 @@ RUN source $NVM_DIR/nvm.sh \
 # add node and npm to path so the commands are available
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
-ENV NES_NPM_CONFIG_LOCAL_PREFIX="./"
-ENV DEBUG=true
 
 # ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
 ARG NES_AUTH_TOKEN
@@ -64,25 +62,17 @@ RUN npm install -g @angular/cli@9.1.13
 # Copy the project files into the container at /app
 COPY . .
 
-# Install any needed packages specified in package.json
-RUN echo $npm_config_local_prefix
 # RUN npm install --legacy-peer-deps
-RUN DEBUG=1 npm install --ignore-scripts
+RUN DEBUG=1 npm install
 
 ### If postinstall scripts are disabled, also run the following command:
-# RUN npx ngnes
+RUN npx ngnes
 
 # Build your Angular application
-# RUN npm run build || exit 1
+RUN npm run build || exit 1
 
 # Make port 4200 available to the world outside this container
 EXPOSE 4200
 
 # Run the app when the container launches
-# CMD ["ng", "serve", "--host", "0.0.0.0"]
-CMD ["tail", "-f", "/dev/null"]
-
-# AFTER the Docker container has been built, run the following after Exec'ing into the container
-#   npx ngnes
-#   npm run build
-#   ng serve --host "0.0.0.0"
+CMD ["ng", "serve", "--host", "0.0.0.0"]
