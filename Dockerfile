@@ -1,6 +1,6 @@
 # Stage 1: Build the Angular application
 # Use an official Node.js image that satisfies the version requirement
-FROM node:14.15.0 as build
+FROM node:16 as build
 
 # Set the working directory in the container
 WORKDIR /app
@@ -23,7 +23,9 @@ RUN npm install -g @angular/cli@13.3.11
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm ci --legacy-peer-deps --verbose
+RUN npm i --legacy-peer-deps --verbose
+
+RUN npx ngnes
 
 # Build your Angular application
 RUN npm run build || exit 1
