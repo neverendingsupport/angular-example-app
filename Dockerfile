@@ -16,7 +16,7 @@ RUN apt-get update \
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 12.13.0
+ENV NODE_VERSION 16.20.2
 
 # install nvm
 # https://github.com/creationix/nvm#install-script
@@ -43,20 +43,24 @@ RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg
 RUN node -v
 RUN npm -v
 
+# Set npm version to a version where transitive dependencies can be correctly overridden
+RUN npm install -g npm@8.19.4
+
 # Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@8.3.29
+# RUN npm install -g @angular/cli@8.2.1
 
 # Copy the project files into the container at /app
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Build your Angular application
-RUN npm run build || exit 1
+# RUN npm run build || exit 1
 
 # Make port 4200 available to the world outside this container
 EXPOSE 4200
 
 # Run the app when the container launches
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["tail", "-f", "/dev/null"]
