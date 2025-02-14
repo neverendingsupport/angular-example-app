@@ -39,7 +39,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@neverendingsupport/angular-tools": "1.1.1",
+    "@angular/cli": "^13.3.11",
     "@angular-devkit/build-angular": "~13.3.3",
     "@angular-devkit/core": "~13.3.3",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@13.4.0-compiler-cli-13.4.4",

@@ -26,7 +26,7 @@ COPY . .
 RUN npm i --legacy-peer-deps --verbose
 
 # Build your Angular application
-RUN npm start
+RUN npx ng serve
 
 # Make port 4200 available to the world outside this container
 EXPOSE 4200
