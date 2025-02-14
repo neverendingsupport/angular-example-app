@@ -47,7 +47,7 @@ RUN npm -v
 RUN npm install -g npm@8.19.4
 
 # Install Angular CLI globally inside the container
-# RUN npm install -g @angular/cli@8.2.1
+RUN npm install -g @angular/cli@8.2.1
 
 # Copy the project files into the container at /app
 COPY . .
@@ -61,6 +61,13 @@ RUN npm install --legacy-peer-deps
 # Make port 4200 available to the world outside this container
 EXPOSE 4200
 
+# Build the app
+RUN ng build --configuration=production --base-href /ocm/ --deploy-url /
+
+# Serve the app
+RUN npm install -g http-server
+CMD ["http-server", "/app", "-p", "8080", "--cors", "--gzip"]
+
 # Run the app when the container launches
 # CMD ["ng", "serve", "--host", "0.0.0.0"]
-CMD ["tail", "-f", "/dev/null"]
+# CMD ["tail", "-f", "/dev/null"]

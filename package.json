@@ -30,6 +30,8 @@
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@8.2.15-platform-browser-dynamic",
     "@angular/router": "npm:@neverendingsupport/angular@8.2.15-router",
     "core-js": "^2.5.0",
+    "colorette": "2.0.20",
+    "memfs": "4.17.0",
     "marked": "^4.2.12",
     "rxjs": "^6.5.5",
     "tslib": "^1.11.1",
