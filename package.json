@@ -40,8 +40,15 @@
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.10",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@7.3.10-cli-7.3.11",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@7.3.10-build-angular-7.3.11",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@7.3.10-schematics-7.3.11",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@7.3.10-schematics-cli-7.3.11",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@7.3.10-webpack-7.3.11",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@7.3.10-architect-7.3.11",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@7.3.10-architect-cli-7.3.11",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@7.3.10-build-webpack-7.3.11",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@7.3.10-core-7.3.11",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.20",
     "@angular/language-service": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.20",
     "@types/jasmine": "~2.8.8",
@@ -115,6 +122,18 @@
     },
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.20"
+    },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-cli-7.3.11"},
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-architect-7.3.11"},
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-architect-cli-7.3.11"},
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-build-webpack-7.3.11"},
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-core-7.3.11"},
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-schematics-7.3.11"},
+    "@angular-devkit/build-angular": {
+      ".": "npm:@neverendingsupport/angular-cli@7.3.10-build-angular-7.3.11"
+    },
+    "@ngtools/webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@7.3.10-webpack-7.3.11"
     }
   }
 }
