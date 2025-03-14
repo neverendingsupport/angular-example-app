@@ -110,7 +110,7 @@
       ".": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.17"
     },
     "zone.js": {
-      ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
+      ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1`.17"
     },
     "@angular-devkit/build-angular": {
       ".": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.17"
