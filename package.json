@@ -64,7 +64,7 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3",
     "webpack-dev-middleware": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4",
-    "ip": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.10",
+    "ip": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.11",
     "http-proxy-middleware": "npm:@neverendingsupport/http-proxy-middleware@0.19.2-http-proxy-middleware-0.19.3"
   },
   "overrides": {
@@ -116,7 +116,7 @@
       ".": "npm:@neverendingsupport/angular-cli@9.1.15-build-angular-9.1.17"
     },
     "webpack-dev-middleware": { ".": "npm:@neverendingsupport/webpack-dev-middleware@3.7.3-webpack-dev-middleware-3.7.4" },
-    "ip": { ".": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.10"},
+    "ip": { ".": "npm:@neverendingsupport/ip@1.1.9-ip-1.1.11"},
     "http-proxy-middleware": { ".": "npm:@neverendingsupport/http-proxy-middleware@0.19.2-http-proxy-middleware-0.19.3" }
   }
 }
