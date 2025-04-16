@@ -22,11 +22,15 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "npm:@neverendingsupport/angular@9.1.13-animations-9.1.17",
+    "@angular/cdk": "npm:@neverendingsupport/angular-material@9.2.4-cdk-9.2.5",
     "@angular/common": "npm:@neverendingsupport/angular@9.1.13-common-9.1.17",
     "@angular/compiler": "npm:@neverendingsupport/angular@9.1.13-compiler-9.1.17",
     "@angular/core": "npm:@neverendingsupport/angular@9.1.13-core-9.1.17",
     "@neverendingsupport/angular-tools": "1.1.3",
     "@angular/forms": "npm:@neverendingsupport/angular@9.1.13-forms-9.1.17",
+    "@angular/google-maps": "npm:@neverendingsupport/angular-material@9.2.4-google-maps-9.2.5",
+    "@angular/material": "npm:@neverendingsupport/angular-material@9.2.4-material-9.2.5",
+    "@angular/material-moment-adapter": "npm:@neverendingsupport/angular-material@9.2.4-material-moment-adapter-9.2.5",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@9.1.13-platform-browser-9.1.17",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@9.1.13-platform-browser-dynamic-9.1.17",
     "@angular/platform-webworker": "npm:@neverendingsupport/angular@9.1.13-platform-webworker-9.1.17",
@@ -34,8 +38,10 @@
     "@angular/router": "npm:@neverendingsupport/angular@9.1.13-router-9.1.17",
     "@angular/service-worker": "npm:@neverendingsupport/angular@9.1.13-service-worker-9.1.17",
     "@angular/upgrade": "npm:@neverendingsupport/angular@9.1.13-upgrade-9.1.17",
+    "@angular/youtube-player": "npm:@neverendingsupport/angular-material@9.2.4-youtube-player-9.2.5",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
+    "moment": "^2.29.4",
     "rxjs": "^6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
@@ -67,6 +73,9 @@
     "@angular/animations": {
       ".": "npm:@neverendingsupport/angular@9.1.13-animations-9.1.17"
     },
+    "@angular/cdk": {
+      ".": "npm:@neverendingsupport/angular-material@9.2.4-cdk-9.2.5"
+    },
     "@angular/common": {
       ".": "npm:@neverendingsupport/angular@9.1.13-common-9.1.17"
     },
@@ -78,6 +87,15 @@
     },
     "@angular/forms": {
       ".": "npm:@neverendingsupport/angular@9.1.13-forms-9.1.17"
+    },
+    "@angular/google-maps": {
+      ".": "npm:@neverendingsupport/angular-material@9.2.4-google-maps-9.2.5"
+    },
+    "@angular/material": {
+      ".": "npm:@neverendingsupport/angular-material@9.2.4-material-9.2.5"
+    },
+    "@angular/material-moment-adapter": {
+      ".": "npm:@neverendingsupport/angular-material@9.2.4-material-moment-adapter-9.2.5"
     },
     "@angular/platform-browser": {
       ".": "npm:@neverendingsupport/angular@9.1.13-platform-browser-9.1.17"
@@ -102,6 +120,9 @@
     },
     "@angular/compiler-cli": {
       ".": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.17"
+    },
+    "@angular/youtube-player": {
+      ".": "npm:@neverendingsupport/angular-material@9.2.4-youtube-player-9.2.5"
     },
     "zone.js": {
       ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
