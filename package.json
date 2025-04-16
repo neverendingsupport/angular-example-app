@@ -19,18 +19,25 @@
   "dependencies": {
     "@angular/animations": "npm:@neverendingsupport/angular@13.4.0-animations-13.4.5",
     "@angular/bazel": "npm:@neverendingsupport/angular@13.4.0-bazel-13.4.5",
+    "@angular/cdk": "npm:@neverendingsupport/angular-material@13.3.9-cdk-13.3.10",
     "@angular/common": "npm:@neverendingsupport/angular@13.4.0-common-13.4.5",
     "@angular/compiler": "npm:@neverendingsupport/angular@13.4.0-compiler-13.4.5",
     "@angular/core": "npm:@neverendingsupport/angular@13.4.0-core-13.4.5",
     "@angular/elements": "npm:@neverendingsupport/angular@13.4.0-elements-13.4.5",
     "@angular/forms": "npm:@neverendingsupport/angular@13.4.0-forms-13.4.5",
+    "@angular/google-maps": "npm:@neverendingsupport/angular-material@13.3.9-google-maps-13.3.10",
     "@angular/localize": "npm:@neverendingsupport/angular@13.4.0-localize-13.4.5",
+    "@angular/material": "npm:@neverendingsupport/angular-material@13.3.9-material-13.3.10",
+    "@angular/material-date-fns-adapter": "npm:@neverendingsupport/angular-material@13.3.9-material-date-fns-adapter-13.3.10",
+    "@angular/material-luxon-adapter": "npm:@neverendingsupport/angular-material@13.3.9-material-luxon-adapter-13.3.10",
+    "@angular/material-moment-adapter": "npm:@neverendingsupport/angular-material@13.3.9-material-moment-adapter-13.3.10",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@13.4.0-platform-browser-13.4.5",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@13.4.0-platform-browser-dynamic-13.4.5",
     "@angular/platform-server": "npm:@neverendingsupport/angular@13.4.0-platform-server-13.4.5",
     "@angular/router": "npm:@neverendingsupport/angular@13.4.0-router-13.4.5",
     "@angular/service-worker": "npm:@neverendingsupport/angular@13.4.0-service-worker-13.4.5",
     "@angular/upgrade": "npm:@neverendingsupport/angular@13.4.0-upgrade-13.4.5",
+    "@angular/youtube-player": "npm:@neverendingsupport/angular-material@13.3.9-youtube-player-13.3.10",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -75,6 +82,9 @@
     "@angular/bazel": {
       ".": "npm:@neverendingsupport/angular@13.4.0-bazel-13.4.5"
     },
+    "@angular/cdk": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-cdk-13.3.10"
+    },
     "@angular/common": {
       ".": "npm:@neverendingsupport/angular@13.4.0-common-13.4.5"
     },
@@ -93,11 +103,26 @@
     "@angular/forms": {
       ".": "npm:@neverendingsupport/angular@13.4.0-forms-13.4.5"
     },
+    "@angular/google-maps": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-google-maps-13.3.10"
+    },
     "@angular/language-service": {
       ".": "npm:@neverendingsupport/angular@13.4.0-language-service-13.4.5"
     },
     "@angular/localize": {
       ".": "npm:@neverendingsupport/angular@13.4.0-localize-13.4.5"
+    },
+    "@angular/material": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-material-13.3.10"
+    },
+    "@angular/material-date-fns-adapter": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-material-date-fns-adapter-13.3.10"
+    },
+    "@angular/material-luxon-adapter": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-material-luxon-adapter-13.3.10"
+    },
+    "@angular/material-moment-adapter": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-material-moment-adapter-13.3.10"
     },
     "@angular/platform-browser": {
       ".": "npm:@neverendingsupport/angular@13.4.0-platform-browser-13.4.5"
@@ -122,6 +147,9 @@
     },
     "@angular/pwa": {
       ".": "npm:@neverendingsupport/angular-cli@13.3.11-pwa-13.3.12"
+    },
+    "@angular/youtube-player": {
+      ".": "npm:@neverendingsupport/angular-material@13.3.9-youtube-player-13.3.10"
     },
     "@angular-devkit/architect": {
       ".": "npm:@neverendingsupport/angular-cli@13.3.11-architect-13.3.12"
