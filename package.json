@@ -22,12 +22,16 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.11",
+    "@angular/cdk": "npm:@neverendingsupport/angular-material@10.2.7-cdk-10.2.8",
     "@angular/common": "npm:@neverendingsupport/angular@10.2.5-common-10.2.11",
     "@angular/compiler": "npm:@neverendingsupport/angular@10.2.5-compiler-10.2.11",
     "@angular/core": "npm:@neverendingsupport/angular@10.2.5-core-10.2.11",
     "@angular/elements": "npm:@neverendingsupport/angular@10.2.5-elements-10.2.11",
     "@angular/forms": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.11",
+    "@angular/google-maps": "npm:@neverendingsupport/angular-material@10.2.7-google-maps-10.2.8",
     "@angular/localize": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.11",
+    "@angular/material": "npm:@neverendingsupport/angular-material@10.2.7-material-10.2.8",
+    "@angular/material-moment-adapter": "npm:@neverendingsupport/angular-material@10.2.7-material-moment-adapter-10.2.8",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.11",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@10.2.5-platform-browser-dynamic-10.2.11",
     "@angular/platform-server": "npm:@neverendingsupport/angular@10.2.5-platform-server-10.2.11",
@@ -36,6 +40,7 @@
     "@angular/router": "npm:@neverendingsupport/angular@10.2.5-router-10.2.11",
     "@angular/service-worker": "npm:@neverendingsupport/angular@10.2.5-service-worker-10.2.11",
     "@angular/upgrade": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.11",
+    "@angular/youtube-player": "npm:@neverendingsupport/angular-material@10.2.7-youtube-player-10.2.8",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -80,6 +85,9 @@
     "@angular/animations": {
       ".": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.11"
     },
+    "@angular/cdk": {
+      ".": "npm:@neverendingsupport/angular-material@10.2.7-cdk-10.2.8"
+    },
     "@angular/common": {
       ".": "npm:@neverendingsupport/angular@10.2.5-common-10.2.11"
     },
@@ -98,11 +106,20 @@
     "@angular/forms": {
       ".": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.11"
     },
+    "@angular/google-maps": {
+      ".": "npm:@neverendingsupport/angular-material@10.2.7-google-maps-10.2.8"
+    },
     "@angular/language-service": {
       ".": "npm:@neverendingsupport/angular@10.2.5-language-service-10.2.11"
     },
     "@angular/localize": {
       ".": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.11"
+    },
+    "@angular/material": {
+      ".": "npm:@neverendingsupport/angular-material@10.2.7-material-10.2.8"
+    },
+    "@angular/material-moment-adapter": {
+      ".": "npm:@neverendingsupport/angular-material@10.2.7-material-moment-adapter-10.2.8"
     },
     "@angular/platform-browser": {
       ".": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.11"
@@ -127,6 +144,9 @@
     },
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.11"
+    },
+    "@angular/youtube-player": {
+      ".": "npm:@neverendingsupport/angular-material@10.2.7-youtube-player-10.2.8"
     },
     "zone.js": {
       ".": "npm:@neverendingsupport/angular@10.2.5-zone.js-10.2.11"
